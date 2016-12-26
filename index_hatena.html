@@ -1,0 +1,33 @@
+<span class="menu-toggle"><i class="blogicon-reorder lg"></i>MENU</span>
+<ul id='menu'>
+<div class="menu-inner">
+<li><a href='http://third-1.hatenablog.com/'>TOP</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/%E9%9F%B3%E6%A5%BD'>音楽</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/%E6%98%A0%E5%83%8F%2F%E5%8B%95%E7%94%BB'>映像/動画</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/%E7%B5%B5'>美術/Art</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/%E5%86%99%E7%9C%9F%E3%83%BBPhoto'>写真/Photo</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/%E3%82%A2%E3%83%8B%E3%83%A1%2F%E6%BC%AB%E7%94%BB'>アニメ/漫画</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/%E6%98%A0%E7%94%BB'>映画</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/Work%2F%E5%AD%A6%E7%BF%92'>読書</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/Life'>Life</a></li>
+<li><a href='http://third-1.hatenablog.com/archive/category/social'>Social/Work</a></li>
+</div>
+</ul>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+    $(function(){
+        $(".menu-toggle").on("click", function() {
+            $(this).next().slideToggle();
+        });
+    });
+     $(window).resize(function(){
+    var win = $(window).width();
+    var p = 768;
+    if(win > p){
+      $("#menu").show();
+    } else {
+      $("#menu").hide();
+    }
+  });
+</script>
